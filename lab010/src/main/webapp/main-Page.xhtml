@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+      xmlns:f="http://xmlns.jcp.org/jsf/core"
+      xmlns:p="http://primefaces.org/ui">
+<f:view>
+    <h:head>
+        <title>Main-Page</title>
+    </h:head>
+    <h:body>
+        <h:form>
+            <h:panelGrid columns="2">
+                <p:outputLabel value="startValue:" for="startValue"/>
+                <p:inputText value="#{logicBean.startValue}" id="startValue"/>
+                <p:outputLabel value="endValue:" for="endValue"/>
+                <p:inputText value="#{logicBean.endValue}" id="endValue"/>
+                <p:outputLabel value="stepValue:" for="stepValue"/>
+                <p:inputText value="#{logicBean.stepValue}" id="stepValue"/>
+                <p:outputLabel value="a:" for="a"/>
+                <p:inputText value="#{logicBean.a}" id="a"/>
+                <p:outputLabel value="b:" for="b"/>
+                <p:inputText value="#{logicBean.b}" id="b"/>
+                <p:outputLabel value="c:" for="c"/>
+                <p:inputText value="#{logicBean.c}" id="c"/>
+                <p:commandButton value="calculate" action="#{logicBean.forRun()}"/>
+            </h:panelGrid>
+        </h:form>
+    </h:body>
+</f:view>
+</html>
